@@ -10,8 +10,7 @@ os.system(f"adduser {username} sudo")
 os.system(f"echo '{username}:{password}' | sudo chpasswd")
 os.system("sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd")
 
-# RDP part
-CRP = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code=\"4/0AeanS0aVEvZ9QWXoxmCJm3pvEGVFjHousksXxw-tF3T_FiFi7nTxF2n59txE8oN0pkBrjw\" --redirect-url=\"https://remotedesktop.google.com/_/oauthredirect\" --name=$(hostname)"
+CRP = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code=\"4/0AVMBsJgxSlFzesrHTM11LIlQKa3FN4cWjCVa5sQuSfGYAosEKTFY55u_IgOkBkHmAKr31w\" --redirect-url=\"https://remotedesktop.google.com/_/oauthredirect\" --name=$(hostname)"
 Pin = 123456
 Autostart = False
 
